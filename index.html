@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Video 16:9</title>
+  <title>Video</title>
   <style>
     body {
       margin: 0;
@@ -13,26 +13,19 @@
       height: 100vh;
     }
 
-    .container {
-      width: 100%;
-      max-width: 100vw;
-      aspect-ratio: 16 / 9;
-    }
-
     video {
       width: 100%;
-      height: 100%;
-      object-fit: contain; /* biar ga kepotong */
+      aspect-ratio: 16/9;
+      object-fit: cover;
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <video autoplay muted playsinline controls>
-    <source src="video.mp4" type="video/mp4">
-  </video>
-</div>
+<video autoplay playsinline>
+  <source src="video.mp4" type="video/mp4">
+</video>
 
 </body>
+</html></body>
 </html>
