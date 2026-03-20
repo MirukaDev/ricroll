@@ -1,3 +1,38 @@
-<video autoplay muted playsinline style="width:100vw; height:100vh; object-fit:cover;">
-  <source src="video.mp4" type="video/mp4">
-</video>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Video 16:9</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 100vw;
+      aspect-ratio: 16 / 9;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* biar ga kepotong */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <video autoplay muted playsinline controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</div>
+
+</body>
+</html>
